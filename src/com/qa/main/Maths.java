@@ -18,9 +18,13 @@ public class Maths {
 	return numberOne - numberTwo;
 	}
 	
-	public double divideThings() {
+	public String divideThings() {
 	double numberOne = 2;
 	double numberTwo = 4;
-	return numberOne / numberTwo;
+	if (numberOne < numberTwo) {
+		return "" + numberOne / numberTwo;
+	} else {
+		return "The division can not be performed when the first number is bigger than the second.";
+	}
 	}
 }
